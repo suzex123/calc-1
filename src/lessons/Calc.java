@@ -32,9 +32,9 @@ class Main {
             num1 = Integer.parseInt(elements[0]);
             num2 = Integer.parseInt(elements[2]);
         }
-        if ((num1 >= 10) || (num2 >= 10)) {
+        if ((num1 > 10) || (num2 > 10)) {
             throw new IllegalArgumentException("Допустимые числа от 1 до 10 включительно.");
-        } else if ((num1 <= 1) || (num2 <= 1)) {
+        } else if ((num1 < 1) || (num2 < 1)) {
             throw new IllegalArgumentException("Вы ввели числа меньше единицы. Допустимые числа от 1 до 10 включительно.");
         }
 
